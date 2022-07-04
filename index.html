@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wave morphing</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="luge.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <nav>
+    <div class="name">
+      <span><a href="/Portfolio/index.html"> Ibrahima kaba</a></span>
+    </div>
+    <ul class="navright">
+      <li class="menu"><a href="/Portfolio/pages/about.html">About</a></li>
+      <li class="menu"><a href="/Portfolio/pages/projects.html">Projects</a></li>
+      <li class="menu"><a href="/Portfolio/pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+  <div id='container'>
+    <div>
+
+
+      <section id="accueil" class="index" data-lg-page="index">
+        <h1 class="title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div class="qualités">
+            <span>Passion</span><br><span>Curiosity</span><br><span>Human</span>
+          </div>Creative<br>
+          developper based<br>
+          in Paris</h1>
+        <canvas id="canvas3d"></canvas>
+      </section>
+    </div>
+    <div data-lg-cursor data-lg-cursor-hide>
+      <div data-lg-cursor-pointer></div>
+      <div data-lg-cursor-trail></div>
+    </div>
+    <div data-lg-preloader style="position: fixed; width: 100%; height: 100%; background: #080808; z-index: 999;">
+      <div data-lg-lottie="/Portfolio/99274-loading.json" data-lg-lottie-autoplay data-lg-lottie-loop></div>
+    </div>
+    <div data-lg-loader></div>
+    <div data-lg-loader="lottie">
+      <div data-lg-loader-out="/Portfolio/99274-loading.json" data-lg-loader-in="reverse" data-lg-lottie-autoplay
+        data-lg-lottie-loop></div>
+    </div>
+  </div>
+  <script type="module" src="module.js"></script>
+  <script src="luge.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.2/lottie.min.js"
+    integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Inter:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	background-color: #000;
+	overflow: hidden;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+canvas {
+	outline: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:10vh;
+  z-index: 10;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	/* background: rgba(0, 0, 0, 0.1); */
+	font-family: 'Inter', sans-serif;
+
+}
+
+.name {
+	font-size: 1.5rem;
+}
+
+.menu {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+
+.menu::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #000;
+	transform: scale(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+
+.menu:hover::after {
+	transform: scale(1);
+}
+
+.navright {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+	font-size: 1.5rem;
+}
+
+#accueil {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 62px);
+	width: 100%;
+
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-28%, -50%);
+	font-size: 8vw;
+	font-family: 'Antonio', sans-serif;
+	width: 100%;
+	letter-spacing: 0.2rem;
+  pointer-events: none;
+}
+
+.title .qualités {
+	display: inline-block;
+	font-size: 1.5vw;
+	font-weight: 400;
+	font-family: 'Inter', sans-serif;
+}
+
+/* CURSEUR */
+
+.lg-cursor .lg-cursor-pointer:nth-child(1):before {
+	margin: -15px 0 0 -15px;
+	width: 30px;
+	height: 30px;
+	background: rgba(0, 255, 255, 0.25);
+}
+
+.lg-cursor .lg-cursor-pointer:nth-child(2):before {
+	background-color: white;
+}
+
+.lg-cursor .lg-cursor-trail path {
+	stroke-width: 8px;
+}
+
+.lg-preloader {
+  display: flex;
+  align-items: center;
+  background: #aefff7;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+.lg-preloader .lg-lottie {
+  display: block;
+  position: relative;
+  width: 200px;
+  z-index: 99;
+}
+.lg-preloader .is-hidden {
+  opacity: 0;
+}
